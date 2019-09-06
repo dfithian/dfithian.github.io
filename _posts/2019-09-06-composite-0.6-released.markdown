@@ -1,0 +1,15 @@
+I recently released version 0.6 of the [composite](https://github.com/ConferOpenSource/composite)
+library on GitHub! It's been a few years since the last release, so the code had stagnated quite a
+bit.
+
+The code now compiles with the lastest Stackage LTS. At time of release, that's 14.3!
+
+The main change is incorporation of typeclasses instead of proxies for the underlying vinyl
+framework. This has resulted in a few breaking changes to the composite API, mostly in the `-base`
+project. Due to the heavy reliance of composite on phantom types, it is now slightly more difficult
+to convince the compiler.
+[reifyVal](http://hackage.haskell.org/package/composite-base-0.6.0.0/docs/Composite-Record.html#v:reifyVal)
+has been provided to assist.
+
+Any questions or support for the new release can be asked on fpchat (`@dfithian`), or on the
+[project issue page](https://github.com/ConferOpenSource/composite/issues/).
