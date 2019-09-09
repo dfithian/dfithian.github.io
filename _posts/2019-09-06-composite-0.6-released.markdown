@@ -11,5 +11,7 @@ to convince the compiler.
 [reifyVal](http://hackage.haskell.org/package/composite-base-0.6.0.0/docs/Composite-Record.html#v:reifyVal)
 has been provided to assist.
 
+See also: [the changelog](https://github.com/ConferOpenSource/composite/blob/develop/CHANGELOG.md).
+
 Any questions or support for the new release can be asked on fpchat (`@dfithian`), or on the
 [project issue page](https://github.com/ConferOpenSource/composite/issues/).
