@@ -11,18 +11,26 @@ Import the right stuff:
 
 ```haskell
 import ClassyPrelude
+import Data.Aeson (FromJSON, parseJSON)
+import Data.Functor.Alt ((<!>))
 import Data.Proxy (Proxy (Proxy))
 import Servant ((:<|>) ((:<|>)), (:>), Get, GetNoContent, JSON, NoContent, QueryParam)
-import Servant.Client (ClientEnv, ClientM, ServantError, client, runClientM)
+import Servant.Client (ClientEnv, ClientM, client, runClientM)
+import Servant.Client.Core (ClientError)
 ```
 
 ## API Type
 
-Here's our API type. In my particular case it was a paging endpoint, so I've included that
-parameter. Depending on server logic, it can either return "200 OK" and a `Baz` or "204 No Content"
-and no content.
+Here's our response and API type. In my particular case it was a paging endpoint, so I've included
+that parameter. Depending on server logic, it can either return "200 OK" and a `Baz` or "204 No
+Content" and no content.
 
-```
+```haskell
+data Baz = Baz
+
+instance FromJSON Baz where
+  parseJSON _ = pure Baz
+
 type BazApi = "foo" :> "bar" :> QueryParam "page" Int :> (Get '[JSON] [Baz] :<|> GetNoContent '[] NoContent)
 ```
 
@@ -34,7 +42,7 @@ monad `ClientM` on either side of the `:<|>` type - we will have to pattern matc
 which response we will end up with.
 
 ```haskell
-getBaz :: Int -> ClientM [Baz] :<|> ClientM NoContent
+getBaz :: Maybe Int -> ClientM [Baz] :<|> ClientM NoContent
 getBaz = client (Proxy @BazApi)
 ```
 
@@ -50,7 +58,7 @@ the definition of `Alt` I found `(<!>) :: f a -> f a -> f a`, which looked like 
 our `f` is `ClientM` and our `a` is `[Baz]`.
 
 ```haskell
-runGetBaz :: (MonadError ServantError m, MonadIO m) => ClientEnv -> Int -> m [Baz]
+runGetBaz :: (MonadIO m) => ClientEnv -> Maybe Int -> m (Either ClientError [Baz])
 runGetBaz env page = liftIO . flip runClientM env $ do
   -- pattern match on the possible results and use the one that is successful via Alt (<!>)
   case getBaz page of
