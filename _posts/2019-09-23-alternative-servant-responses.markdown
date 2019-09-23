@@ -3,6 +3,8 @@ could return two possible responses. The first was 200 OK, and a JSON body. The 
 Content, and, well, no content. I struggled for a while wrestling the compiler and searching in vain
 online for resources before finally arriving at an answer that worked for me. Below is the code!
 
+Full example [here](https://github.com/dfithian/alternative-servant-demo).
+
 ## Imports
 
 Import the right stuff:
