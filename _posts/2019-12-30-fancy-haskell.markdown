@@ -51,10 +51,10 @@ friendly within these boundaries, and I leave the reasoning to the next section.
 ### Good engineers don't make themselves irreplaceable
 
 In the business world you're never going to make an effective product unless you understand the
-concerns of your stakeholders. For Haskell engineers, our product is our code, and our stakeholders
-are those in charge of hiring as well as present and future Haskell engineers. Emphasis on _future_
-engineer, like one who hasn't learned or mastered Haskell yet. _That's_ our stakeholder, not Ed
-Kmett.
+concerns of your stakeholders. Within the scope of an engineering team, it could be said that our
+product as engineers is our code and our stakeholders are those in charge of hiring as well as
+present and future Haskell engineers. Emphasis on _future_ engineer, like one who hasn't learned or
+mastered Haskell yet. _That's_ our stakeholder, not Ed Kmett.
 
 Put another way, everyone who's worked at an engineering company knows some infamous former
 employee who wrote a bunch of bad code and whose name, when mentioned, makes everyone groan. Don't
