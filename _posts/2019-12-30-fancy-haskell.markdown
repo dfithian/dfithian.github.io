@@ -1,5 +1,5 @@
-Inspired by https://www.parsonsmatt.org/2019/12/26/write_junior_code.html and
-https://cvlad.info/junior-developers/.
+Inspired by posts from [@parsonsmatt](https://www.parsonsmatt.org/2019/12/26/write_junior_code.html)
+and [@cvlad](https://cvlad.info/junior-developers/).
 
 I have some observations and opinions about "Fancy Haskell" from my time working as a Haskell
 engineer.
