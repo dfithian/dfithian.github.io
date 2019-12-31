@@ -4,15 +4,15 @@ and [@cvlad](https://cvlad.info/junior-developers/).
 I have some observations and opinions about "Fancy Haskell" from my time working as a Haskell
 engineer.
 
-# Observations
+## Observations
 
-## Some Haskell is better than no Haskell
+### Some Haskell is better than no Haskell
 
 I think we can all agree on this (otherwise you probably wouldn't be reading this). We'd all rather
 be writing Haskell than pretty much anything else. We relish the safe feeling when code compiles
 and we're confident it'll do what we ask it to do.
 
-## Proficiency in [technology] leads to using [technology] in a more advanced way
+### Proficiency in [technology] leads to using [technology] in a more advanced way
 
 It's true for anything! For Haskell specifically, as we level up we want to use the fancier bits.
 We all want to experiment and learn for learning's sake, and that's one of the reasons we wanted to
@@ -22,9 +22,9 @@ However, we don't have enough new blood coming in so people have to level up ind
 as a group, which makes the barrier to entry higher. The tendency to always want to write fancier
 Haskell plus the lack of junior Haskellers leads to an alienation of newcomers.
 
-# Opinions
+## Opinions
 
-## Fancy Haskell has benefits that can't be overlooked
+### Fancy Haskell has benefits that can't be overlooked
 
 Fancy Haskell can always find its way into a codebase for junior developers so long as the reasons
 for doing so are clear. As examples, I have two libraries or frameworks that I often see criticized
@@ -48,7 +48,7 @@ While fancy Haskell can lead to the alienation of the beginner demographic, some
 concepts are so useful that an adequate alternative doesn't exist. We can still be beginner
 friendly within these boundaries, and I leave the reasoning to the next section.
 
-## Good engineers don't make themselves irreplaceable
+### Good engineers don't make themselves irreplaceable
 
 In the business world you're never going to make an effective product unless you understand the
 concerns of your stakeholders. For Haskell engineers, our product is our code, and our stakeholders
@@ -60,7 +60,7 @@ Put another way, everyone who's worked at an engineering company knows some infa
 employee who wrote a bunch of bad code and whose name, when mentioned, makes everyone groan. Don't
 be that engineer by writing fancy code for the sake of writing fancy code.
 
-# Conclusion
+## Conclusion
 
 Fancy Haskell code has a time and a place. Make sure to clearly identify the tradeoffs when
 reaching for anything fancy. Incorporate those tradeoffs into an ideal manifestation of simple
