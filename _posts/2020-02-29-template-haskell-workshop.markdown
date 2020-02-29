@@ -7,4 +7,4 @@ exposure to learning about it or using it.
 As are all tutorials, this workshop is in-progress, so if you have any feedback I'd love to hear it! The easiest place
 to find me is on fpchat (@dfithian).
 
-Here's the link again: https://github.com/dfithian/th-workshop
+Here's the link again: [https://github.com/dfithian/th-workshop](https://github.com/dfithian/th-workshop).
