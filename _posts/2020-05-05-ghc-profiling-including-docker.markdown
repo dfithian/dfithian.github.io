@@ -34,19 +34,15 @@ You can view `.prof` data directly with a text editor. However, you will need th
 installation of `ghc` and/or `ghc-prof`) to view a graph of your program's memory usage: `hp2ps -c $program.hp` You can
 open the graph called `$program.ps` in Preview on a Mac, or you can Google for PostScript rendering applications.
 
-## Creating a Docker image
-
-Your Docker container may need the following packages, which can be installed via `apt-get`: `ghc`, `ghc-prof`.
-
-In addition, due to the nature of `.prof` files, which are not written while the program is running, you will need to
-create a special entrypoint script. Special thanks to Rick Owens (`@rickowens`) for the skeleton script.
+Since the `.prof` file is not written while a binary is running, it can be difficult to gather statistics for anything
+service related. Below is a script that can be used to ensure your service stays up while you can gather incremental
+performance statistics. Special thanks to Rick Owens (`@rickowens`) for the skeleton script.
 
 ```bash
 #!/bin/bash
 # runs $program - to get profiling information, `ps ax | grep $program` and `kill -2 $pid`
 while true
 do
-    # to run locally, change this line to: stack exec --profile $program -- +RTS -p -hm -RTS
     $program +RTS -p -hm -RTS
     sleep 3
     mv $program.hp $program.hp.keep
@@ -54,7 +50,14 @@ do
 done
 ```
 
-Now, change your `Dockerfile` `ENTRYPOINT` to be this script. You will need to `COPY` this script to your container.
+## Creating a Docker image
+
+If running in Docker, the steps to create a Docker image are a bit more involved.
+
+Your Docker container may need the following packages, which can be installed via `apt-get`: `ghc`, `ghc-prof`.
+
+Change your `Dockerfile` `ENTRYPOINT` to be the script above (in [viewing profile data](#viewing-profile-data)). You
+will need to `COPY` this script to your container.
 
 ## Running a Docker image and extracting data
 
