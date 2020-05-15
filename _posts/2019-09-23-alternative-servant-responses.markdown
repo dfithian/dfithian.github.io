@@ -1,3 +1,7 @@
+---
+title: Alternative Servant Responses
+---
+
 Last week I had an interesting run-in with a Servant API type. I was requesting from an API that
 could return two possible responses. The first was 200 OK, and a JSON body. The other was 204 No
 Content, and, well, no content. I struggled for a while wrestling the compiler and searching in vain

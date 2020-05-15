@@ -1,3 +1,7 @@
+---
+title: Git Project Management
+---
+
 `hit` is a new tool for managing multiple git repositories as a project
 [https://github.com/dfithian/hit](https://github.com/dfithian/hit). Drop a config in `~/.hitconfig` and start treating
 groups of repositories like a single project - get info about status, diffs, create branches, rebase... you name it!

@@ -1,3 +1,7 @@
+---
+title: File Path TH 0.1 released
+---
+
 SimSpace recently released version 0.1 of the [file-path-th](https://github.com/Simspace/file-path-th) library on
 GitHub! The package contains a utility for embedding relative filepaths in Template Haskell.
 
