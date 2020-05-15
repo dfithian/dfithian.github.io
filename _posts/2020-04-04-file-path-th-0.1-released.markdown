@@ -1,5 +1,5 @@
 ---
-title: File Path TH 0.1 released
+title: File Path TH 0.1 Released
 ---
 
 SimSpace recently released version 0.1 of the [file-path-th](https://github.com/Simspace/file-path-th) library on

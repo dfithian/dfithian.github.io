@@ -1,5 +1,5 @@
 ---
-title: Composite 0.6 released
+title: Composite 0.6 Released
 ---
 
 I recently released version 0.6 of the [composite](https://github.com/ConferOpenSource/composite)
