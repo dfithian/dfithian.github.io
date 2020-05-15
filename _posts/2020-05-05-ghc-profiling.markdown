@@ -1,3 +1,7 @@
+---
+title: GHC profiling (including Docker)
+---
+
 Recently, I tried to profile some memory and resource usage. As I often find with profiling, I struggled a little bit to
 get set up. This post outlines profiling a GHC binary, including special considerations for Docker.
 
