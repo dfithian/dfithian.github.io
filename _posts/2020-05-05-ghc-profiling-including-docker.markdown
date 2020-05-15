@@ -36,7 +36,7 @@ open the graph called `$program.ps` in Preview on a Mac, or you can Google for P
 
 Since the `.prof` file is not written while a binary is running, it can be difficult to gather statistics for anything
 service related. Below is a script that can be used to ensure your service stays up while you can gather incremental
-performance statistics. Thanks to Rick Owens (`@rickowens`) for the skeleton script.
+performance statistics. Thanks to Rick Owens for the skeleton script.
 
 ```bash
 #!/bin/bash
