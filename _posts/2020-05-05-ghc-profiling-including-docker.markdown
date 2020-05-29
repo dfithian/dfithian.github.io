@@ -16,6 +16,8 @@ Compile your program as `stack build --profile`.
 * Due to a bug in profiling options with Template Haskell, you may also need to use `--ghc-options
   -fexternal-interpreter`. I noticed this with a bug similar to the one reported here:
   [https://github.com/commercialhaskell/stack/issues/4275](https://github.com/commercialhaskell/stack/issues/4275).
+      * For more information on why this option fixes the issue, see
+        [http://www.well-typed.com/blog/2020/05/profiling-template-haskell/](http://www.well-typed.com/blog/2020/05/profiling-template-haskell/).
 
 ## Running
 
@@ -27,6 +29,10 @@ Run your program as `stack exec --profile $program -- +RTS -p -hm -RTS`
       for other options
 * `-hm` will produce a heap profile indexed by module (hence the `m`)
     * See [https://mpickering.github.io/ghc-docs/build-html/users_guide/profiling.html#profiling-memory-usage](https://mpickering.github.io/ghc-docs/build-html/users_guide/profiling.html#profiling-memory-usage) for other options
+
+See also
+[https://mpickering.github.io/ghc-docs/build-html/users_guide/profiling.html#retainer-profiling](https://mpickering.github.io/ghc-docs/build-html/users_guide/profiling.html#retainer-profiling)
+for information on retainer profiling.
 
 ## Viewing profile data
 
