@@ -27,7 +27,7 @@ cd ..
 git clone https://github.com/Avi-D-coder/implicit-hie.git
 cd implicit-hie
 stack install implicit-hie
-ln -s ~/.local/bin/hie-wrapper ~/.local/bin/language-server-wrapper # for some reason VSCode looks for `hie-wrapper`, so just simlink it
+ln -s ~/.local/bin/hie-wrapper ~/.local/bin/language-server-wrapper # for some reason VSCode looks for `hie-wrapper`, so just symlink it
 ```
 
 Set it up for a repository:
