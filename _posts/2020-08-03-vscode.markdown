@@ -1,0 +1,42 @@
+---
+title: VSCode
+---
+
+Recently I switched to using VSCode over Spacemacs. Here are some notes I took.
+
+## Extensions
+
+* Haskell
+* Haskell Syntax Highlighting
+
+### Other Extensions
+
+* `Relative Line Numbers`
+* `Rewrap` for the emacs `alt-Q` functionality of rewrapping comments
+* `Vim` for vim bindings
+
+## Haskell Language Server for VSCode
+
+Install the dependencies:
+
+```bash
+git clone https://github.com/haskell/haskell-language-server.git
+cd haskell-language-server
+stack ./install.hs hls-8.8.3
+cd ..
+git clone https://github.com/Avi-D-coder/implicit-hie.git
+cd implicit-hie
+stack install implicit-hie
+ln -s ~/.local/bin/hie-wrapper ~/.local/bin/language-server-wrapper # for some reason VSCode looks for `hie-wrapper`, so just simlink it
+```
+
+Set it up for a repository:
+
+```bash
+cd $REPO
+gen-hie > hie.yaml
+```
+
+That's it! After a few minutes, you should be able to get type information on hover.
+
+![type-info-on-hover](assets/hover.png)
