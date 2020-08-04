@@ -47,7 +47,7 @@ That's it! After a few minutes, you should be able to get type information on ho
 
 Add this to `settings.json` once you have installed the `Run on Save` extension.
 
-```json
+```
     "runOnSave.statusMessageTimeout": 3000,
     "runOnSave.commands": [
         {
