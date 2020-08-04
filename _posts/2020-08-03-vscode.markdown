@@ -14,6 +14,7 @@ Recently I switched to using VSCode over Spacemacs. Here are some notes I took.
 * `Relative Line Numbers`
 * `Rewrap` for the emacs `alt-Q` functionality of rewrapping comments
 * `Vim` for vim bindings
+* `Run on Save` to run a formatter on save
 
 ## Haskell Language Server for VSCode
 
@@ -40,3 +41,22 @@ gen-hie > hie.yaml
 That's it! After a few minutes, you should be able to get type information on hover.
 
 ![type-info-on-hover](/assets/hover.png)
+
+
+## Formatting on Save
+
+Add this to `settings.json` once you have installed the `Run on Save` extension.
+
+```json
+    "runOnSave.statusMessageTimeout": 3000,
+    "runOnSave.commands": [
+        {
+            "match": ".*\\.hs$",
+            "notMatch": "[\\\\\\/]_[^\\\\\\/]*\\.hs$",
+            "command": "stylish-haskell ${file}",
+            "runIn": "backend",
+            "runningStatusMessage": "Formatting ${fileBasename}",
+            "finishStatusMessage": "${fileBasename} formatted"
+        }
+    ]
+```
