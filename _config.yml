@@ -27,7 +27,7 @@ url: "https://dfithian.github.io" # the base hostname & protocol for your site, 
 github_username:  dfithian
 
 # Build settings
-theme: jekyll-theme-minimal
+theme: jekyll-theme-midnight
 plugins: []
 
 # Exclude from processing.
