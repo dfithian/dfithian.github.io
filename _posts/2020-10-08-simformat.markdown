@@ -1,5 +1,5 @@
 ---
-title: SimFormat 0.1.1.0
+title: SimFormat 0.1.1.0 Released
 ---
 
 [SimFormat](https://github.com/simspace/simformat) is a Haskell import formatter we use at SimSpace. This past week it
