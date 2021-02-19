@@ -151,4 +151,7 @@ And that's it!
 
 ## To be continued
 
-Thanks for reading! Stay tuned for the next post in the series, transactionality and indexing.
+Thanks for reading! Part 2, on the DSL and transactions, is [here]({% post_url 2021-02-18-database-implementation-part-2 %}).
+
+As always, I'd love to hear anything I've mixed up, especially in this case from database experts. Find me on fpchat
+(`@dfithian`) or reddit (`/u/dfith`).
