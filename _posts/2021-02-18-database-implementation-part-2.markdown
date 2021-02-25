@@ -286,7 +286,8 @@ execute = \case
 
 ## To be continued
 
-Thanks for reading! Stay tuned for the final post in the series, on indexes and performance.
+Thanks for reading! The final post in the series, on indexes and performance, is
+[here]({% post_url 2021-02-25-database-implementation-part-3 %}).
 
 As always, I'd love to hear anything I've mixed up, especially in this case from database experts. Find me on fpchat
 (`@dfithian`) or reddit (`/u/dfith`).
