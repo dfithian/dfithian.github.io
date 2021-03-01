@@ -94,7 +94,7 @@ services to the same server, but it could help in situations where script execut
 
 Packing Haskell executables using `upx` seems to be a more general solution to the size problem, and it can be performed
 on both static and dynamic outputs. The results speak for themselves, as `upx` was able to compress both the static and
-dynamic example over 2000 times smaller than the original.
+dynamic example 5-6 times smaller than the original.
 
 This leads to questions which are more pertinent to Haskell developers in general. Is this extra cruft affecting compile
 times somehow? Could it be that the compiler spends a lot of extra time managing unnecessary bytes that could be
