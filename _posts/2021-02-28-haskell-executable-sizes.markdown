@@ -23,6 +23,12 @@ change the ecosystem?
 
 ## Is it all fluff?
 
+### Split sections
+
+The [split
+sections](https://downloads.haskell.org/ghc/latest/docs/html/users_guide/phases.html#ghc-flag--split-sections) GHC
+option is turned on by default. [More context](https://gitlab.haskell.org/ghc/ghc/-/issues/11445).
+
 ### Using an executable packer
 
 Compiling the static version takes about 17 minutes. Running [upx](https://upx.github.io/) on the static binary is
@@ -42,8 +48,8 @@ $ ls -latrh big-binary-base
 
 #### UPX caveats
 
-An executable run with `upx` unpacks itself at startup. [Running multiple instances of the same `upx`-packed executable
-results in wasted
+An executable compressed with `upx` unpacks itself at startup. [Running multiple instances of the same `upx`-packed
+executable results in wasted
 memory](https://stackoverflow.com/questions/353634/are-there-any-downsides-to-using-upx-to-compress-a-windows-executable/355581).
 
 ### Dynamic linking
