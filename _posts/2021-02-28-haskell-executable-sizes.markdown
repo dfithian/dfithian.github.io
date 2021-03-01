@@ -40,6 +40,12 @@ $ ls -latrh big-binary-base
 -rwxr-xr-x  1 dan  staff    21M Feb 25 16:31 big-binary-base
 ```
 
+#### UPX caveats
+
+An executable run with `upx` unpacks itself at startup. [Running multiple instances of the same `upx`-packed executable
+results in wasted
+memory](https://stackoverflow.com/questions/353634/are-there-any-downsides-to-using-upx-to-compress-a-windows-executable/355581).
+
 ### Dynamic linking
 
 Running GHC using the dynamic linker should show how much of the code is part of the actual package, and not a
