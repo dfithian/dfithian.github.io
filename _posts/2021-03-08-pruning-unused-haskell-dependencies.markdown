@@ -11,7 +11,7 @@ haskell dependencies", there are a few results but none exactly what I need:
 
 So I wrote a tool to do it.
 
-[https://hackage.haskell.org/package/prune-juice-0.3](https://hackage.haskell.org/package/prune-juice-0.3)
+[https://hackage.haskell.org/package/prune-juice-0.4](https://hackage.haskell.org/package/prune-juice-0.4)
 
 ## Example
 
@@ -41,12 +41,14 @@ modules, and errors if any dependency listed in `package.yaml` is never imported
 
 ## Performance
 
-Because it calls `ghc-pkg` once per dependency and stores the results in a large in-memory map, performance is quite
-slow in large projects. However, for a small project it's pretty fast.
+Edit: A friend helped out with the performance problems. It should be fast now!
+
+~~Because it calls `ghc-pkg` once per dependency and stores the results in a large in-memory map, performance is quite
+slow in large projects. However, for a small project it's pretty fast.~~
 
 ```bash
 $ time prune-juice
-prune-juice  2.42s user 0.86s system 85% cpu 3.832 total
+prune-juice  0.35s user 0.07s system 95% cpu 0.442 total
 ```
 
 ## Compatibility
