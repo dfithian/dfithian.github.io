@@ -13,6 +13,26 @@ So I wrote a tool to do it.
 
 [https://hackage.haskell.org/package/prune-juice-0.3](https://hackage.haskell.org/package/prune-juice-0.3)
 
+## Example
+
+Say I add a dependency that isn't used in my project. In this case, we'll use `lens`, because that's one of my favorite
+libraries.
+
+```bash
+$ prune-juice
+Some unused base dependencies for package prune-juice
+  lens
+```
+
+If I move that dependency to an executable, I'll also get an error just for that executable. I can also target specific
+packages within my project, in case `stack.yaml` is very big.
+
+```bash
+$ prune-juice --package prune-juice
+Some unused dependencies for executable prune-juice in package prune-juice
+  lens
+```
+
 ## How does it work?
 
 `prune-juice` uses `hpack` to parse the project `package.yaml` files, and `ghc-pkg` to load the `exposed-modules` fields
@@ -25,7 +45,7 @@ Because it calls `ghc-pkg` once per dependency and stores the results in a large
 slow in large projects. However, for a small project it's pretty fast.
 
 ```bash
-prune-juice $ time prune-juice
+$ time prune-juice
 prune-juice  2.42s user 0.86s system 85% cpu 3.832 total
 ```
 
