@@ -11,7 +11,7 @@ haskell dependencies", there are a few results but none exactly what I need:
 
 So I wrote a tool to do it.
 
-[https://hackage.haskell.org/package/prune-juice-0.4](https://hackage.haskell.org/package/prune-juice-0.4)
+[https://hackage.haskell.org/package/prune-juice](https://hackage.haskell.org/package/prune-juice)
 
 ## Example
 
@@ -53,5 +53,7 @@ prune-juice  0.35s user 0.07s system 95% cpu 0.442 total
 
 ## Compatibility
 
-Currently, the tool is only compatible with Stack and Hpack, but there's no reason it can't work with Cabal, Nix, or
-any other build tool in the future.
+Update 2021-03-11: Works with Cabal now!
+
+~~Currently, the tool is only compatible with Stack and Hpack, but there's no reason it can't work with Cabal, Nix, or
+any other build tool in the future.~~
