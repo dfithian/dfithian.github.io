@@ -1,10 +1,9 @@
 ---
 title: Reddit Haskell Stats
-published: false
 ---
 
-Having posted a lot of blog entries to the [Haskell Subreddit](https://reddit.com/r/haskell) lately with mixed results.
-So I wrote a script to gather all `/r/haskell` posts for the last year and visualize them.
+Having posted a lot of blog entries to the [Haskell Subreddit](https://reddit.com/r/haskell) lately with mixed results,
+I wrote a script to gather all `/r/haskell` posts for the last year and visualize them.
 
 It pages the API at `https://api.pushshift.io/reddit/search/submission/`, parses the `created_utc` and `score` fields
 from the response, and converts the data to CSV fields including the day of the week and UTC hour of the day.
@@ -12,12 +11,13 @@ from the response, and converts the data to CSV fields including the day of the 
 The script, including the CSV output, is here:
 [https://gist.github.com/dfithian/4842b420640c6a793b52cdda012cb391](https://gist.github.com/dfithian/4842b420640c6a793b52cdda012cb391).
 
-Here are the results!
+I imported the data to a Google spreadsheet and plotted it to see if there were any obvious insights. Here are the
+results! Warning: _Past returns do not indicate future performance._
 
 ## Hour of day
 
-Volume ramps up over the course of the day. Interestingly, it's highest at 16 UTC, which is around the time most folks
-in Europe are leaving work. There's a bump right before bedtime for a lot of folks in North America.
+Volume ramps up over the course of the day. It's highest at 16 UTC, which is around the time most folks in Europe are
+leaving work. There's a bump right before bedtime for a lot of folks in North America.
 
 ![/assets/volume-by-hour-of-day.png](/assets/volume-by-hour-of-day.png)
 
@@ -39,7 +39,5 @@ weekend.
 
 ## The most opportune time to submit
 
-Based on the above, it seems like the most opportune time to post would be weekdays around 7 UTC, given the low volume
-at that time.
-
-_Past returns do not indicate future performance._
+Based on the above, it seems like the most opportune time to post would be weekdays around 7 UTC. Those posts get the
+highest scores while having not much competition given the low volume.
