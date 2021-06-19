@@ -18,8 +18,8 @@ wife was finding recipe links online and transcribing the ingredients to a groce
 to not only transcribe the recipes, but also find the links later in the week once we were cooking. In the end, we
 decided to create an app to solve our problem.
 
-In the basic workflow, you can add a link to a recipe online. The backend creates a grocery list from the ingredients.
-You can also add freeform groceries to your list, if you need eggs or milk. It integrates with other apps like Reminders,
-Notes, and Safari. You can save recipes if you want to make them at some point in the future!
+The basic idea is to add a link to a recipe. The ingredients list is parsed and added to your grocery list. If you need
+eggs or milk, you can also add groceries directly to your list. It integrates with other apps like Reminders, Notes, and
+Safari, and you can save recipes for later if you ever want to make them again!
 
 Hope you like it!
