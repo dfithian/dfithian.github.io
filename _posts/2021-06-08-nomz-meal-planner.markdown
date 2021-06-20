@@ -11,15 +11,19 @@ Announcing the iOS app [Nomz Meal Planner](https://mo-nomz.herokuapp.com)!
   <img src="/assets/activate.gif" alt="/assets/activate.gif" width="150"/>
 </div>
 
-Up until a few months ago, my wife and I shopped for groceries by going down each aisle and buying whatever looked good.
-The result was a large bill and lots of wasted food. More recently, we started planning our meals using links to recipes
-online. Our spending instantly fell 25%, we stopped wasting as much food, and we started eating healthier. However, my
-wife was finding recipe links online and transcribing the ingredients to a grocery list by hand! It took a lot of time
-to not only transcribe the recipes, but also find the links later in the week once we were cooking. In the end, we
-decided to create an app to solve our problem.
+My wife and I created this app together, in large part because during COVID we were forced to cook all of our meals each
+week. After a few weeks we started to dread the time it took to pick out recipes and manually compile a grocery list each
+week. As a result, our meal planning didn't last very long and our grocery bill started to increase because we were
+shopping without a clear idea of what meals we would make. To combat this, we ended up creating an app that cuts our meal
+planning time drastically and automates our grocery list creation. The best part is we found that our grocery bill
+decreased a third of what it was before we used the app.
 
-The basic idea is to add a link to a recipe. The ingredients list is parsed and added to your grocery list. If you need
-eggs or milk, you can also add groceries directly to your list. It integrates with other apps like Reminders, Notes, and
-Safari, and you can save recipes for later if you ever want to make them again!
+The app transforms the manual process of searching, saving, and transcribing recipes into just a few quick steps:
+
+* Add a link to a recipe.
+* The ingredients are parsed and added to your grocery list.
+* Add any additional items you need directly to your list.
+* Either use the app itself to check off items as you shop or easily export the grocery list to other apps like Reminders, Notes, and Safari.
+* Easily save recipes for the future to use again! 
 
 Hope you like it!
