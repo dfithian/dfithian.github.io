@@ -5,10 +5,10 @@ title: Nomz Meal Planner
 Announcing the iOS app [Nomz Meal Planner](https://mo-nomz.herokuapp.com)!
 
 <div style="text-align: center">
-  <img src="/assets/grocery-list.png" alt="/assets/grocery-list.png" width="150"/>
-  <img src="/assets/recipe-list.png" alt="/assets/recipe-list.png" width="150"/>
-  <img src="/assets/add-link.png" alt="/assets/add-link.png" width="150"/>
-  <img src="/assets/add-bulk.png" alt="/assets/add-bulk.png" width="150"/>
+  <img src="/assets/add-link.gif" alt="/assets/add-link.gif" width="150"/>
+  <img src="/assets/add-manual.gif" alt="/assets/add-manual.gif" width="150"/>
+  <img src="/assets/reorder.gif" alt="/assets/reorder.gif" width="150"/>
+  <img src="/assets/activate.gif" alt="/assets/activate.gif" width="150"/>
 </div>
 
 Up until a few months ago, my wife and I shopped for groceries by going down each aisle and buying whatever looked good.
