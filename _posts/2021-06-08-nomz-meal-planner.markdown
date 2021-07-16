@@ -5,10 +5,14 @@ title: Nomz Meal Planner
 Announcing the iOS app [Nomz Meal Planner](https://mo-nomz.herokuapp.com)!
 
 <div style="text-align: center">
-  <img src="/assets/add-link.gif" alt="/assets/add-link.gif" width="150"/>
-  <img src="/assets/add-manual.gif" alt="/assets/add-manual.gif" width="150"/>
-  <img src="/assets/reorder.gif" alt="/assets/reorder.gif" width="150"/>
-  <img src="/assets/activate.gif" alt="/assets/activate.gif" width="150"/>
+  <img style="padding: 5px;" src="https://mo-nomz.herokuapp.com/add-link.gif" alt="/assets/add-link.gif" width="150"/>
+  <img style="padding: 5px;" src="https://mo-nomz.herokuapp.com/add-manual.gif" alt="/assets/add-manual.gif" width="150"/>
+  <img style="padding: 5px;" src="https://mo-nomz.herokuapp.com/add-recipe.gif" alt="/assets/add-recipe.gif" width="150"/>
+</div>
+<div style="text-align: center">
+  <img style="padding: 5px;" src="https://mo-nomz.herokuapp.com/reorder.gif" alt="/assets/reorder.gif" width="150"/>
+  <img style="padding: 5px;" src="https://mo-nomz.herokuapp.com/activate.gif" alt="/assets/activate.gif" width="150"/>
+  <img style="padding: 5px;" src="https://mo-nomz.herokuapp.com/add-notes.gif" alt="/assets/add-notes.gif" width="150"/>
 </div>
 
 My wife and I created this app together, in large part because during COVID we were forced to cook all of our meals each
