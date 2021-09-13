@@ -22,12 +22,13 @@ shopping without a clear idea of what meals we would make. To combat this, we en
 planning time drastically and automates our grocery list creation. The best part is we found that our grocery bill
 decreased a third of what it was before we used the app.
 
-The app transforms the manual process of searching, saving, and transcribing recipes into just a few quick steps:
+The app transforms the manual process of searching, saving, and transcribing recipes into just a few quick steps. Here's
+how it works!
 
-* Add a link to a recipe.
-* The ingredients are parsed and added to your grocery list.
-* Add any additional items you need directly to your list.
-* Either use the app itself to check off items as you shop or easily export the grocery list to other apps like Reminders, Notes, and Safari.
-* Easily save recipes for the future to use again! 
+* Add links to online recipes or define your own
+* Nomz adds the ingredients to your grocery list
+* You can add to, edit, merge, and reorder your list based on your local grocery store
+* Nomz stores each recipe and shares across multiple devices, so when you're ready to cook, tap on the saved link
+* Add a rating and notes for the next time you make it!
 
 Hope you like it!
