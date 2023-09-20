@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="assets/css/reset.css" />
+  <link rel="stylesheet" href="assets/css/index.css" />
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    function download() {
+      var html2pdf = window.html2pdf;
+      html2pdf().from(document.getElementById("pdf")).save();
+    }
+  </script>
+</head>
+
+  <body>
+    <div id="pdf" class="page-wrapper">
+      <div class="content-wrapper">
+        <div class="context-wrapper">
+          <div class="context-inner">
+            <div>
+              <div class="center">
+                <img src="assets/images/avatar.jpg" class="avatar">
+              </div>
+              <p class="content">I’m an experienced backend engineer, passionate about correct code, privacy, and security. I love wearing multiple hats, which is why so much of my experience is from early-stage startups. I value working in many different languages and technologies, and I care most of all about delivering high-quality, pragmatic outcomes.</p>
+            </div>
+            <div>
+              <div class="link-wrapper">
+                <li class="left list-item">
+                  <img src="assets/icons/rocket.svg" class="icon">
+                  Haskell, PostgreSQL, Scala
+                </li>
+                <li class="left list-item">
+                  <img src="assets/icons/thumbsup.svg" class="icon">
+                  Nix, Chef, Puppet, Spark, Python, Java
+                </li>
+                <li class="left list-item">
+                  <img src="assets/icons/wrench.svg" class="icon">
+                  Swift, Vue, JavaScript, TypeScript, C#, C++, C
+                </li>
+              </div>
+            </div>
+            <div>
+              <ul class="link-wrapper">
+                <li class="left list-item">
+                  <a href="tel:207-432-7380">
+                    <img src="assets/icons/phone.svg" class="icon">
+                  </a>
+                  207-432-7380
+                </li>
+                <li class="left">
+                  <a href="mailto:daniel.m.fithian@gmail.com">
+                    <img src="assets/icons/inbox.svg" class="icon">
+                  </a>
+                  daniel.m.fithian@gmail.com
+                </li>
+                <li class="left">
+                  <a href="https://github.com/dfithian">
+                    <img src="assets/icons/github.svg" class="icon">
+                  </a>
+                  dfithian
+                </li>
+                <li class="left">
+                  <a href="https://dfithian.github.io">
+                    <img src="assets/icons/globe.svg" class="icon">
+                  </a>
+                  https://dfithian.github.io
+                </li>
+                <li class="left">
+                  <img src="assets/icons/cap.svg" class="icon">
+                  Tufts University 2013
+                </li>
+                <li class="left">
+                  <div class="icon"></div>
+                  B.A. Mathematics
+                </li>
+                <li class="left">
+                  <div class="icon"></div>
+                  Magna Cum Laude
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="experience-wrapper">
+          <div class="experience-header">
+            <h1 class="left">Dan Fithian</h1>
+            <div class="right">
+              <button onclick="download()">
+                <img src="assets/icons/download.svg" class="icon">
+              </button>
+            </div>
+          </div>
+          <div class="experience-inner">
+            <!-- <div>
+              <h3>VitalBio</h3>
+              <p><b>Application Software Engineer</b> | December 2021 - present</p>
+              <ul class="experience-detail-list">
+                <li>Operated as a full stack engineer in numerous components of the system. My main responsibilities were twofold - the main experiment orchestration engine, its two associated UIs (one for medical personnel, one for scientists), and the DSL we wrote for engineers to develop on, and a cloud-based ETL engine for converting raw experiment data to patient results.</li>
+                <li>Led infrastructure projects such as an ELK server for instrument metrics, an APM server for TTR (time-to-results) analysis, and maintenance of our build server.</li>
+              </ul>
+            </div> -->
+            <div>
+              <h3>SimSpace Corporation</h3>
+              <p><b>Senior Software Engineer, Backend Lead</b> | February 2020 - December 2021</p>
+              <ul class="experience-detail-list">
+                <li>Led feature design as backend lead. Two of my biggest contributions were in deployment automation and observability in virtualized networks, and scaling botnet traffic generation with an open API to leverage hundreds of hosts per network.</li>
+                <li>Owned infrastructure projects for a team of 50+ engineers. I contributed most to CI infrastructure and observability, and developed and maintained an automated documentation site.</li>
+              </ul>
+            </div>
+            <div>
+              <h3>TVision</h3>
+              <p><b>Senior Software Engineer, Team Lead</b> | December 2016 - February 2020</p>
+              <ul class="experience-detail-list">
+                <li>Led a scrum team and performed both team lead and product owner responsibilities. This included design and development of device configuration, data ingestion, and customer report delivery as well as scaling for 5x panel growth.</li>
+                <li>Managed infrastructure monitoring by integrating to Datadog, Pagerduty, and implementing an on-call rotation in addition to maintaining our build system and creating internal productivity tools for developers.</li>
+                <li>Led team development by promoting FP concepts and organizing weekly tech talks.</li>
+              </ul>
+            </div>
+            <div>
+              <h3>SimSpace Corporation</h3>
+              <p><b>Software Engineer</b> | October 2015 - December 2016</p>
+              <ul class="experience-detail-list">
+                <li>Wrote network traffic generation automating hundreds of hosts during training simulations.</li>
+                <li>Developed and maintained role-based authentication and authorization services.</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Paytronix Systems</h3>
+              <p><b>Software Engineer</b> | October 2013 - October 2015</p>
+              <ul class="experience-detail-list">
+                <li>Launched new POS integrations.</li>
+                <li>Contributed to service and UI components in legacy codebase.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
